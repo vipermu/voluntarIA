@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzWaNt7HgJX77mtnHgez3kJE1ijsAI_bEjEZJXlLAKgJP9dqvc/exec'
+        const form = document.forms['email-form']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+    -->
+
+    <!-- SEO -->
+    <title>VoluntarIA</title>
+    <meta name="description"
+        content="The most vulnerable populations are in critical need of help, communities (businesses and individuals, non profits) can help. We are creating the platform to connect them.">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+        rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="./static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="./static/css/svg-icons.css">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://www.bridgeaid.app">
+    <!-- EDIT -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="BRIDGEAID" />
+    <meta property="og:description"
+        content="The most vulnerable populations are in critical need of help, communities (businesses and individuals, non profits) can help. We are creating the platform to connect them.">
+    <meta property="og:updated_time" content="2017-01-04T16:27:50">
+    <!-- EDIT -->
+    <meta property="og:image" content="./static/images/pontem-share-image.png">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="429">
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="./static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="./static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="./static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="./static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="./static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="./static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="./static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+
+    <link rel="stylesheet" type='text/css' media='all' href="./static/css/team.css">
+
+</head>
+
+<body>
+    <main role="main">
+        <article id="webslides" class="vertical">
+            <section>
+                <div class="wrap aligncenter">
+                    <h1 class="text-landing">VoluntarIA</h1>
+                    <p class="text-intro">
+                        <i>Empoderant les ONG en temps de crisi</i>
+                    </p>
+
+                    <p>
+                        <a href="https://bridgeaid.glideapp.io/" title="VoluntarIApp"><img class="blacklogo aligncenter"
+                                src="./static/images/logos/pontem.svg" alt="VoluntarIApp"></a>
+                    </p>
+
+                </div>
+
+                <!-- <p class="text-context; aligncenter">
+          <a href="#slide=6">
+            Built by BridgeAId
+          </a>
+        </p> -->
+                <!-- .end .wrap -->
+            </section>
+            <section>
+                <div class="wrap">
+                    <div class="grid vertical-align">
+                        <div class="column text-center">
+                            <h3><strong>Organitzats, millor</strong></h3>
+                        </div>
+                        <div class="column">
+                            <p class="text-intro">
+                                Davant l’emergència del <strong>COVID-19</strong>, presentem la <strong>primera</strong>
+                                plataforma que et permet <strong>ajudar</strong> als grups més
+                                <strong>vulnerables</strong> de forma <strong>efectiva</strong> i
+                                <strong>senzilla</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+
+        </article>
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="./static/js/webslides.js"></script>
+
+    <!-- Autoslide 5 seconds. If you don't want autoslide, remove: {autoslide: 5000} -->
+    <script>
+        window.ws = new WebSlides({});
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="./static/js/svg-icons.js"></script>
+
+</body>
+
+<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+
+</html>
