@@ -4,8 +4,7 @@
 
 ## Architecture
 
-![Overall Architecture](./overall-architecture.svg)
-<img src="./overall-architecture.svg">
+![Overall Architecture](./overall-architecture.png)
 
 ### Catalan
 
