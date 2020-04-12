@@ -61,3 +61,17 @@ Right now we are using Python + BeautifulSoup to scrape information
 of the COVID-19 pandemic. If the demand for our project increase we
 are thinking of using Scrapy (or maybe Scrapinghub) to meet the
 potential demands.
+
+
+## Contributing
+
+We follow the 
+[Conventional Commits convention](https://www.conventionalcommits.org/en/v1.0.0-beta.4/)
+and the
+[Angular Styleguide](https://angular.io/guide/styleguide) when it
+comes to how we organize our project--of course, only where it makes
+sense, since this project is not a whole Angular application (yet),
+so there is no Javascript, Typescript or Angular modules for example;
+but this does not mean that we do not follow principles such as T-DRY,
+LIFT or the folders-by-feature structure.
+
