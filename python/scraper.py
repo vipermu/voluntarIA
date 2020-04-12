@@ -60,3 +60,6 @@ def scrape_worldometers_data():
     data_dict = get_table_data_from_soup(soup=soup)
 
     return data_dict
+
+if __name__=="__main__":
+    data_dict = scrape_worldometers_data()
