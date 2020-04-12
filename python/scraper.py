@@ -1,3 +1,5 @@
+"""Basic worldometers scraping module"""
+
 import requests
 
 from bs4 import BeautifulSoup
@@ -14,6 +16,7 @@ def get_soup_from_url(
 
 
 def process_data_item(data):
+    "TODO: @vipermu can you input the return type?"
     data = data.text.strip()
     data = data.replace(',', '')
     data = data.replace('+', '')
@@ -26,7 +29,7 @@ def process_data_item(data):
 
 def get_table_data_from_soup(
     soup: BeautifulSoup,
-) -> None:
+) -> dict:
     data_dict = {}
     key_list = [
         'country', 'total_cases', 'new_cases', 'total_deaths',
@@ -56,7 +59,7 @@ def get_table_data_from_soup(
     return data_dict
 
 
-def scrape_worldometers_data():
+def scrape_worldometers_data() -> dict:
     url = 'https://www.worldometers.info/coronavirus/#countries'
     soup = get_soup_from_url(url=url)
     data_dict = get_table_data_from_soup(soup=soup)
