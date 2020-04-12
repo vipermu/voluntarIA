@@ -4,11 +4,11 @@
 
 ### Catalan
 
-[General Description Goes Here]
+VoluntàrIA és una plataforma que vota per l'ajuda organitzada enfront la crisi del COVID-19. Ofereix una aplicació que proporciona informació detallada sobre les ONGs que l'usuari té a prop i permet realitzar donacions de forma senzilla i segura. A més, fa possible una comunicació senzilla entre usuaris i ONGs en cas de que es vulgui participar activament amb l’entitat.
 
 ### English
 
-[General Description Goes Here]
+VoluntàrIA it's a platform that vows for organized help against the COVID-19 crisis. It offers a web application that gives detailed information about NGOs and non-profits close to the user, allowing them to donate, volunteer and contact these entities on the touch of a button. All the payments are secured using Stripe and Google's Technology.
 
 ## Architecture
 
