@@ -7,7 +7,7 @@ class SpreadSheet:
         scope = ['https://spreadsheets.google.com/feeds',
                  'https://www.googleapis.com/auth/drive']
         creds = ServiceAccountCredentials.from_json_keyfile_name(
-            'covid_credentials.json', scope)
+            'credentials.json', scope)
         client = gspread.authorize(creds)
         self.sheet = client.open('lang_data').sheet1
 
