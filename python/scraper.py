@@ -2,6 +2,8 @@ import requests
 
 from bs4 import BeautifulSoup
 
+import google_drive as gd
+
 
 def get_soup_from_url(
     url: str
@@ -63,3 +65,5 @@ def scrape_worldometers_data():
 
 if __name__=="__main__":
     data_dict = scrape_worldometers_data()
+    spreadsheet = gd.SpreadSheet()
+    spreadsheet.append_row(data_dict['spain']) 
