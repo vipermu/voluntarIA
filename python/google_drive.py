@@ -13,11 +13,22 @@ class SpreadSheet:
 
     def append_row(
         self,
-        chat_id: int,
-        lang: str,
+        data_dict: Dict[str, Any],
     ):
+        values = [
+            data_dict['country'],
+            data_dict['active_cases'],
+            data_dict['cases_per_million'],
+            data_dict['critical'],
+            data_dict['new_cases'],
+            data_dict['new_deaths'],
+            data_dict['total_cases'],
+            data_dict['total_deaths'],
+            data_dict['total_recoveries'],
+        ]
+
         self.sheet.append_row(
-            values=[chat_id, lang],
+            values=values,
         )
 
     def update_lang(
