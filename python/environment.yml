@@ -1,0 +1,11 @@
+name: scraper
+channels:
+  - defaults
+  - anaconda
+dependencies:
+  - python=3.8.1
+  - beautifulsoup4=4.8.2
+  - pip:
+    - lxml==4.5.0
+    - gspread==3.3.0
+    - oauth2client==4.1.3
