@@ -9,10 +9,7 @@ class SpreadSheet:
         creds = ServiceAccountCredentials.from_json_keyfile_name(
             'credentials.json', scope)
         client = gspread.authorize(creds)
-        self.sheet = client.open('lang_data').sheet1
-
-    def get_user_lang_dict_list(self):
-        return self.sheet.get_all_records()
+        self.sheet = client.open('worldometers').sheet1
 
     def append_row(
         self,
