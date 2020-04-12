@@ -2,6 +2,11 @@
 
 ## Overview
 
+## Architecture
+
+![Overall Architecture](./overall-architecture.svg)
+<img src="./overall-architecture.svg">
+
 ### Catalan
 
 VoluntàrIA és una plataforma que vota per l'ajuda organitzada enfront la crisi del COVID-19. Ofereix una aplicació que proporciona informació detallada sobre les ONGs que l'usuari té a prop i permet realitzar donacions de forma senzilla i segura. A més, fa possible una comunicació senzilla entre usuaris i ONGs en cas de que es vulgui participar activament amb l’entitat.
